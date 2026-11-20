@@ -2,7 +2,7 @@
 
 Toolkit de analítica promocional para un retailer, construido sobre promociones históricas: previsión de demanda, ROI por promoción y **programa promocional optimizado** bajo presupuesto. Se usa a través de un asistente que responde preguntas comerciales con cálculos reales, respalda cada conclusión con evidencia verificable y **se detiene en lugar de inventar** cuando no puede respaldar una respuesta. Demostrado sobre datos reales de retail: [Dunnhumby — The Complete Journey](https://data.mendeley.com/datasets/7myy93ym6k/1) (2.500 hogares, 711 días, licencia CC BY 4.0).
 
-**App en línea:** <URL_APP>
+**App en línea:** https://promo-copilot-569896642310.europe-west1.run.app
 
 ## Qué hace
 
