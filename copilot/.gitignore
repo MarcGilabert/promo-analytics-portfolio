@@ -1,0 +1,4 @@
+runs/*.json
+decisions/*.json
+__pycache__/
+.ipynb_checkpoints/

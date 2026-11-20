@@ -1,0 +1,9 @@
+categoria,nivel_semanal,modelo,wape_referencia,cobertura_intervalo,sesgo_pct,semanas_entrenamiento,ramp_up,actividad_min,actividad_max
+BAG SNACKS,879.0,Ridge + calendario (regla por categoria),0.11,0.45,-2.6,80,False,0.027,2.601
+BAKED BREAD/BUNS/ROLLS,1078.0,Ridge + calendario (regla por categoria),0.11,0.64,-2.0,80,False,0.0,3.909
+CHEESE,1085.0,Ridge + calendario (regla por categoria),0.11,0.64,-1.3,80,False,0.205,2.713
+FLUID MILK PRODUCTS,1367.0,Ridge + calendario (regla por categoria),0.11,0.91,1.2,80,False,0.0,3.393
+FRZN MEAT/MEAT DINNERS,889.0,Ridge + calendario (regla por categoria),0.11,0.64,-3.5,80,False,0.0,2.209
+SOFT DRINKS,1677.0,Ridge + calendario (regla por categoria),0.11,0.73,3.1,80,False,0.03,2.605
+SOUP,1084.0,Ridge + calendario (regla por categoria),0.11,0.82,-9.1,80,False,0.0,4.445
+VEGETABLES - SHELF STABLE,924.0,Ridge + calendario (regla por categoria),0.11,0.55,-1.4,80,False,0.0,5.426

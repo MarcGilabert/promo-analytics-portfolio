@@ -1,0 +1,138 @@
+[
+  {
+    "id": "A1",
+    "pregunta": "¿Cuánto venderé de leche en 0 semanas?",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "argumento invalido: horizonte 0"
+  },
+  {
+    "id": "A2",
+    "pregunta": "Previsión de leche a 100 semanas vista",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "horizonte fuera de rango"
+  },
+  {
+    "id": "A3",
+    "pregunta": "¿Leche o queso, cuánto venderé en 4 semanas?",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "FLUID MILK PRODUCTS",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "ambigua: resuelve al primer match + horizonte no validado"
+  },
+  {
+    "id": "A4",
+    "pregunta": "¿Qué ROI tiene una promo de un producto que no vendemos?",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "economico sin categoria valida"
+  },
+  {
+    "id": "A5",
+    "pregunta": "asdf qwerty 123",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "sin sentido"
+  },
+  {
+    "id": "A6",
+    "pregunta": "¿Cuántas unidades de leche en 52 semanas?",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "FLUID MILK PRODUCTS",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "limite: extrapolacion maxima"
+  },
+  {
+    "id": "A7",
+    "pregunta": "¿Me recomiendas rebajar algo este mes?",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "vaga, sin categoria"
+  },
+  {
+    "id": "A8",
+    "pregunta": "Dame margen y ROI de una promo de pan",
+    "tool_esperada": "evaluate_promo_roi",
+    "categoria_esperada": "BAKED BREAD/BUNS/ROLLS",
+    "decision_esperada": "ENTREGAR",
+    "nota": "economico, pan fiabilidad media"
+  },
+  {
+    "id": "A9",
+    "pregunta": "¿Cuánto venderé de leche esta semana y qué ROI tendrá?",
+    "tool_esperada": "evaluate_promo_roi",
+    "categoria_esperada": "FLUID MILK PRODUCTS",
+    "decision_esperada": "ENTREGAR",
+    "nota": "mezcla volumen y ROI: prima la intencion economica"
+  },
+  {
+    "id": "A10",
+    "pregunta": "¿Cuánto venderé de sopa la semana que viene?",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "SOUP",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "horizonte validado pero fiabilidad baja"
+  },
+  {
+    "id": "A11",
+    "pregunta": "Optimiza el programa con 0 €",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "presupuesto invalido"
+  },
+  {
+    "id": "A12",
+    "pregunta": "Planifica el calendario de 20 semanas con 1000 €",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "horizonte fuera de rango"
+  },
+  {
+    "id": "A13",
+    "pregunta": "¿Qué promociono este mes con 0 € de presupuesto?",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "presupuesto imposible"
+  },
+  {
+    "id": "A14",
+    "pregunta": "Maximiza el beneficio del programa con 1000 €",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "el beneficio no se optimiza sin margenes reales"
+  },
+  {
+    "id": "A15",
+    "pregunta": "Recomiéndame un programa que maximice el beneficio con 1.000 €",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "recomendacion pidiendo optimizar beneficio"
+  },
+  {
+    "id": "A16",
+    "pregunta": "¿Qué referencias retiro de patatas fritas?",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "subcategoria sin datos suficientes para surtido"
+  },
+  {
+    "id": "A17",
+    "pregunta": "Retira del surtido las marcas que no dan beneficio",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "surtido sin subcategoria y pidiendo beneficio sin margenes"
+  }
+]

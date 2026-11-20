@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Cuánto venderé de leche la próxima semana?",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "FLUID MILK PRODUCTS",
+    "decision_esperada": "ENTREGAR",
+    "nota": "volumen, verde"
+  },
+  {
+    "id": 2,
+    "pregunta": "Dame la previsión de queso para la semana que viene",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "CHEESE",
+    "decision_esperada": "ENTREGAR",
+    "nota": "volumen"
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cuántas unidades de refrescos esperamos el próximo mes?",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "SOFT DRINKS",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "mes = 4 semanas"
+  },
+  {
+    "id": 4,
+    "pregunta": "Previsión de carne congelada a 3 semanas",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "FRZN MEAT/MEAT DINNERS",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "sinonimo carne"
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Cuánto venderé de verdura en conserva en 4 semanas?",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "VEGETABLES - SHELF STABLE",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "volumen [fiabilidad medida]"
+  },
+  {
+    "id": 6,
+    "pregunta": "Prevé los snacks para las próximas 2 semanas",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "BAG SNACKS",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "sinonimo snack [fiabilidad medida]"
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Y de sopa cuánto venderé en 4 semanas?",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "SOUP",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "fiabilidad baja"
+  },
+  {
+    "id": 8,
+    "pregunta": "Previsión de pan para 4 semanas",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "BAKED BREAD/BUNS/ROLLS",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "fiabilidad baja [fiabilidad medida]"
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cuántas unidades de queso en 12 semanas?",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "CHEESE",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "extrapolacion"
+  },
+  {
+    "id": 10,
+    "pregunta": "Previsión de leche a 10 semanas vista",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "FLUID MILK PRODUCTS",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "extrapolacion"
+  },
+  {
+    "id": 11,
+    "pregunta": "¿Qué ROI tendrá bajar el precio de la leche?",
+    "tool_esperada": "evaluate_promo_roi",
+    "categoria_esperada": "FLUID MILK PRODUCTS",
+    "decision_esperada": "ENTREGAR",
+    "nota": "economico -> tool de ROI"
+  },
+  {
+    "id": 12,
+    "pregunta": "¿Cuánto margen deja promocionar el queso?",
+    "tool_esperada": "evaluate_promo_roi",
+    "categoria_esperada": "CHEESE",
+    "decision_esperada": "ENTREGAR",
+    "nota": "economico"
+  },
+  {
+    "id": 13,
+    "pregunta": "¿Cuántos euros ingreso con una oferta de refrescos?",
+    "tool_esperada": "evaluate_promo_roi",
+    "categoria_esperada": "SOFT DRINKS",
+    "decision_esperada": "ENTREGAR",
+    "nota": "economico"
+  },
+  {
+    "id": 14,
+    "pregunta": "¿Es rentable rebajar la sopa?",
+    "tool_esperada": "evaluate_promo_roi",
+    "categoria_esperada": "SOUP",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "economico + fiabilidad baja"
+  },
+  {
+    "id": 15,
+    "pregunta": "¿Qué rentabilidad tiene una promo de carne congelada?",
+    "tool_esperada": "evaluate_promo_roi",
+    "categoria_esperada": "FRZN MEAT/MEAT DINNERS",
+    "decision_esperada": "ENTREGAR",
+    "nota": "economico"
+  },
+  {
+    "id": 16,
+    "pregunta": "Dame la previsión de cervezas para 4 semanas",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "sin datos"
+  },
+  {
+    "id": 17,
+    "pregunta": "¿Cuánto venderé de pañales el mes que viene?",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "categoria desconocida"
+  },
+  {
+    "id": 18,
+    "pregunta": "¿Qué ROI tendrá una promo de cervezas?",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "economico pero sin datos"
+  },
+  {
+    "id": 19,
+    "pregunta": "¿Cómo va el negocio este trimestre?",
+    "tool_esperada": null,
+    "categoria_esperada": null,
+    "decision_esperada": "BLOQUEADA",
+    "nota": "pregunta vaga"
+  },
+  {
+    "id": 20,
+    "pregunta": "¿Cuánto venderé de bebidas la próxima semana?",
+    "tool_esperada": "get_category_forecast",
+    "categoria_esperada": "SOFT DRINKS",
+    "decision_esperada": "ENTREGAR",
+    "nota": "sinonimo bebida"
+  },
+  {
+    "id": 21,
+    "pregunta": "Optimiza el programa de promociones del próximo mes con 1.000 €",
+    "tool_esperada": "optimize_promo_program",
+    "categoria_esperada": "PROGRAMA",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "programa vacio al 50 %, horizonte no validado"
+  },
+  {
+    "id": 22,
+    "pregunta": "¿Qué categorías promociono la próxima semana con 60 euros?",
+    "tool_esperada": "optimize_promo_program",
+    "categoria_esperada": "PROGRAMA",
+    "decision_esperada": "ENTREGAR",
+    "nota": "objetivo ventas: solo la leche aumenta las ventas (fiabilidad alta)"
+  },
+  {
+    "id": 23,
+    "pregunta": "Planifica el calendario promocional de la próxima semana con 55 €",
+    "tool_esperada": "optimize_promo_program",
+    "categoria_esperada": "PROGRAMA",
+    "decision_esperada": "ENTREGAR",
+    "nota": "presupuesto ajustado: solo leche, fiabilidad alta"
+  },
+  {
+    "id": 24,
+    "pregunta": "Recomiéndame el programa de volumen de la próxima semana con 1.000 €",
+    "tool_esperada": "recommend_promo_decision",
+    "categoria_esperada": "DECISION",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "recomendacion de volumen a 1 semana"
+  },
+  {
+    "id": 25,
+    "pregunta": "Recomiéndame el programa del próximo mes con 1.000 €",
+    "tool_esperada": "recommend_promo_decision",
+    "categoria_esperada": "DECISION",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "recomendacion de ventas: mejora dentro del error del modelo"
+  },
+  {
+    "id": 26,
+    "pregunta": "Recomiéndame un programa de volumen con 1.000 €. ¿Y si permitimos 4 promociones por categoría?",
+    "tool_esperada": "recommend_promo_decision",
+    "categoria_esperada": "DECISION",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "alternativa que relaja la restriccion activa"
+  },
+  {
+    "id": 27,
+    "pregunta": "¿Qué fabricantes mantengo en el surtido de refrescos en lata 12/18?",
+    "tool_esperada": "optimize_assortment",
+    "categoria_esperada": "SOFT DRINKS 12/18&15PK CAN CAR",
+    "decision_esperada": "ENTREGAR",
+    "nota": "surtido latas 12/18, cobertura 98 %"
+  },
+  {
+    "id": 28,
+    "pregunta": "Racionaliza el surtido de bebidas sin gas con 4 fabricantes y solo el 50 % de transferencia",
+    "tool_esperada": "optimize_assortment",
+    "categoria_esperada": "SOFT DRINKS CAN NON-CARB (EXCE",
+    "decision_esperada": "ENTREGAR_CON_AVISO",
+    "nota": "surtido con transferencia reducida; grupo con pocos hogares"
+  }
+]

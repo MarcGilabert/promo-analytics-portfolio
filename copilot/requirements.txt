@@ -1,0 +1,5 @@
+streamlit
+pandas
+numpy
+anthropic
+pulp==2.9.0
